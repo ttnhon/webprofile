@@ -4,11 +4,76 @@
 	<title>Trương Thành Nhơn</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="ttnhon.css">
+	<link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="icon" href="images/icon.ico">
 </head>
 <body>
 	<div id="container">
-		<div id="header"></div>
-		<div id="body"></div>
+		<div id="header"><img src="images/ttnhon.jpg"></div>
+		<div id="body">
+			<div id="title">TRƯƠNG THÀNH NHƠN: PROFILE</div>
+			<div class="tab">
+ 			 	<button class="tablinks" onclick="openTab(event, 'TongQuan')" id="defaultOpen">Tổng quan</button>
+  				<button class="tablinks" onclick="openTab(event, 'CongViec')">Công việc và học vấn</button>
+  				<button class="tablinks" onclick="openTab(event, 'LienHe')">Thông tin liên hệ</button>
+			</div>
+
+			<div id="TongQuan" class="tabcontent">
+  				<ul>
+  					<li>Họ và tên: TRƯƠNG THÀNH NHƠN</li>
+  					<li>Mã số sinh viên: 1512389</li>
+  					<li>Ngày sinh: 04/04/1997</li>
+  					<li>Giới tính: Nam</li>
+  					<li>Quê quán: Tiền Giang</li>
+  					<li>Số CMND: 312330673</li>
+  					<li>Dân tộc: Kinh</li>
+  					<li>Tôn giáo: Không</li>
+  					<li>Ngôn ngữ: Tiếng Việt, nghe/nói/đọc/viết được một ít tiếng Anh</li>
+  				</ul>
+			</div>
+			<div id="CongViec" class="tabcontent">
+  				<p><b>CÔNG VIỆC</b></p><hr>
+  				<p>Hiện tại chưa có công việc ^_^</p><hr><br>
+
+  				<p><b>KỸ NĂNG CHUYÊN MÔN</b></p><hr>
+  				<p>Ngôn ngữ lập trình: C/C++, C#</p>
+  				<p>Đang học: HTML CSS, Java</p><hr><br>
+
+  				<p><b>ĐẠI HỌC</b></p><hr>
+  				<p>Trường Đại học Khoa học Tự nhiên, Tp Hồ Chí Minh - Khóa 2015</p><hr><br>
+
+  				<p><b>TRƯỜNG PHỔ THÔNG</b></p><hr>
+  				<p>Trường THPT Trương Định, Gò Công - Khóa 54</p><hr><br>
+			</div>
+			<div id="LienHe" class="tabcontent">
+  				<p><b>ĐIỆN THOẠI DI ĐỘNG</b></p><hr>
+  				<p>0127 871 8097</p><hr><br>
+
+  				<p><b>EMAIL</b></p><hr>
+  				<p>1512389@student.hcmus.edu.vn</p>
+  				<p>ttnhon0404@gmail.com</p><hr><br>
+
+  				<p><b>FACEBOOK</b></p><hr>
+  				<p><a href="https://www.facebook.com/thanhnhon.truong.71" target='_blank'>Trương Thành Nhơn</a></p><hr><br>
+			</div>
+
+			<script>
+			function openTab(evt, tabName) {
+    			var i, tabcontent, tablinks;
+    			tabcontent = document.getElementsByClassName("tabcontent");
+    			for (i = 0; i < tabcontent.length; i++) {
+    		  		tabcontent[i].style.display = "none";
+    			}
+   				tablinks = document.getElementsByClassName("tablinks");
+    			for (i = 0; i < tablinks.length; i++) {
+        			tablinks[i].className = tablinks[i].className.replace(" active", "");
+    			}
+    			document.getElementById(tabName).style.display = "block";
+    			evt.currentTarget.className += " active";
+			}
+			document.getElementById("defaultOpen").click();
+			</script>
+		</div>
 		<div id="footer"><a href="index.html">Home</a></div>
 	</div>	
 </body>
