@@ -1,0 +1,97 @@
+body
+{
+	background-color: #20e0c34a;
+}
+div.body_head
+{
+	position: relative;
+	margin: auto;
+	width: 1230px;
+	height: 418px;
+	background: url("nvphuc_img/profile.png") no-repeat;
+	background-size:contain;
+	/* border: 3px solid #8AC007; */
+}
+div.personalImage{
+	position: absolute;
+	width: 16%;
+	height: 162px;
+	bottom: 0px;
+	left: 11px;
+	display: inline;
+	/* border:  3px black; */
+}
+div.personalName{
+	position: absolute;
+	width: 25%;
+	height: 93px;
+	bottom: 0px;
+	left: 177px;
+	font-style: arial;
+	font-family: 50px arial;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+	color: #edff00;
+}
+div.Menu
+{
+	position: absolute;
+	bottom: -3px;
+	left: 373px;
+	width: 60%;
+	height: 50px;
+	/* border-left: 1px solid #e9eaed; */
+}
+img.resize {
+    width: 163px; /* you can use % */
+    height: auto;
+}
+img.resize1 {
+    width: 50px; /* you can use % */
+    height: auto;
+}
+li{
+	list-style-type: none;
+}
+li.btn{
+	margin: 0 0 30px 0;
+	font-size: 30px;
+	display: inline;
+	/* display: list-item; */
+	text-align: -webkit-match-parent;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 32px;
+	font-style:  bold;
+	font-weight:  bold;
+}
+button
+{
+	background-color: #98efee00;
+	float: left;
+	border: none;
+	border-left: 3px solid #00c7ff96;
+	color: #0c0c0c;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+button:hover {
+    background-color: #ccc;
+}
+.tabcontent {
+	margin: auto;
+	width: 1230px;
+	height: auto;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f1f1f1;
+}
+.body_foot
+{
+	margin: auto;
+	width: 1230px;
+	height: auto;
+	font-size: 20px;
+}

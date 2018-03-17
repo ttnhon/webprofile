@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Nguyễn Văn Phúc </title>
+	<link rel="icon" href="images/icon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<script type="text/javascript" src="1.js"></script>
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+ 	<link rel="stylesheet" href="nvphuc.css">
+</head>
+<body >
+	<div class="body_head">
+		<div class="personalImage">
+			<img class="resize" src="nvphuc_img/nvp.jpg" alt="">
+		</div>
+		<div class="personalName">
+			<p>Nguyễn Văn Phúc</p>
+		</div>
+		<div class="Menu">
+				<ul>
+					<li class="btn"><button class="tablinks" onclick="openTab(event, 'TongQuan')" id="defaultOpen">Tổng quan</button></li>
+					<li class="btn"><button class="tablinks" onclick="openTab(event, 'ChuyenMon')">Chuyên môn</button></li>
+					<li class="btn"><button class="tablinks" onclick="openTab(event, 'LienHe')">Liên hệ</button></li>
+				</ul>
+		</div>
+	</div>
+	<div>
+		<div id="TongQuan" class="tabcontent">
+  				<ul>
+  					<li ><h4>Họ và tên: Nguyễn Văn Phúc</h4></li>
+  					<li ><h4>Mã số sinh viên: 1512405</h4></li>
+  					<li ><h4>Ngày sinh: 11/03/1997</h4></li>
+  					<li ><h4>Giới tính: Nam</h4></li>
+  					<li ><h4>Quê quán: Hà Nội</h4></li>
+  					<li ><h4>Số CMND: 017291957</h4></li>
+  					<li ><h4>Dân tộc: Kinh</h4></li>
+  					<li ><h4>Tôn giáo: Không</h4></li>
+  				</ul>
+		</div>
+		<div id="ChuyenMon" class="tabcontent">
+  				<p><b>CÔNG VIỆC HIỆN TẠI</b></p>
+  				<p>Sinh viên</p><hr><br>
+
+  				<p><b>KỸ NĂNG CHUYÊN MÔN</b></p>
+  				<p>Ngôn ngữ lập trình đã biết: C/C++, C#</p>
+  				<p>Ngôn ngữ lập trình hướng đến: HTML CSS, Java</p><hr><br>
+
+  				<p><b>ĐẠI HỌC</b></p>
+  				<p>Trường Đại học Khoa học Tự nhiên, Tp Hồ Chí Minh - Khóa 2015</p><hr><br>
+
+			</div>
+			<div id="LienHe" class="tabcontent">
+  				<img src="nvphuc_img/phone.png" class = "resize1" alt="">
+  				<p>0981187298</p><hr><br>
+
+  				<img src="nvphuc_img/gmail.png" class="resize1" alt="">
+  				<p>nvpit97@gmail.com</p><hr><br>
+
+				<img src="nvphuc_img/fb.png" class="resize1" alt="">
+  				<p>https://www.facebook.com/pvn1103</p><br>
+			</div>
+	</div>
+	<div class="body_foot">
+		<pre><h3><a href="index.html">Trang chủ</a>              <a href="ttnhon.html.html">Trương Thành Nhơn</a>            <a href="hpphuc.html">Huỳnh Phi Phúc</a></h3></pre>
+	</div>
+	<script>
+			function openTab(evt, tabName) {
+    			var i, tabcontent, tablinks;
+    			tabcontent = document.getElementsByClassName("tabcontent");
+    			for (i = 0; i < tabcontent.length; i++) {
+    		  		tabcontent[i].style.display = "none";
+    			}
+   				tablinks = document.getElementsByClassName("tablinks");
+    			for (i = 0; i < tablinks.length; i++) {
+        			tablinks[i].className = tablinks[i].className.replace(" active", "");
+    			}
+    			document.getElementById(tabName).style.display = "block";
+    			evt.currentTarget.className += " active";
+			}
+			document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>
