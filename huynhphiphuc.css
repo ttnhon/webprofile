@@ -1,0 +1,76 @@
+html,
+body {
+	margin: 0 auto;
+	background-color: #f2f2f2
+}
+
+#container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#banner {
+	height: 380px;
+	padding: 10px;
+	background-image: url(images/hpp-cover.jpg);
+	background-position: center;
+	background-size: 900px;
+	background-repeat: no-repeat;
+}
+	div img {
+		height: 200px;
+		width: 200px;
+		display: block;
+	}
+
+	#avatar {
+		position: relative;
+		float:left;
+    	top: 160px;
+   		width: 200px;
+   		height: 200px;
+   		left: 30px;
+   		border: 3px solid #ffffff;
+	}
+
+	#name {
+		position: relative;
+		float:left;
+		top: 300px;
+		left: 50px;
+		font-size: 40px;
+		font-weight: bold;
+		color:#000000;
+	}
+
+.tabheader {
+	margin-top: 30px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #d9d9d9;
+	border: 1px solid  #b3b3b3;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.tabbody {
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid  #b3b3b3;
+	background-color: #ffffff;
+	font-size: 18px;
+}
+
+.tab {
+	float:right;
+	padding-right: 300px;
+}
+
+#footer {
+	padding-left: 20px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 28px;
+	background-color: #66b3ff;
+}
